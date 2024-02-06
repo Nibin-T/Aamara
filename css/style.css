@@ -5281,7 +5281,7 @@ font-weight: 700;
 
 /* divider */
 .divider-xl {
-height: 130px;
+height: 60px;
 }
 
 @media all and (min-width: 1920px) {
@@ -5292,7 +5292,7 @@ height: 130px;
 
 @media only screen and (max-width: 995px) {
   .divider-xl {
-    height: 120px;
+    height: 60px;
   }
 }
 
