@@ -3833,7 +3833,7 @@ p a:hover {
 }
 
     .more-button-bg-center.more-button-bg-center-dark {
-        background: none;
+        background: #fffbfbd6;
         border: 2px dashed #fff;
     }
 
@@ -3842,7 +3842,7 @@ p a:hover {
 }
 
 .more-button-bg-center.more-button-bg-center-dark.more-button-bg-center-dark-close {
-    background: none;
+    background: fffbfbd6;
     border: 2px dashed #fff;
 }
 
@@ -4753,14 +4753,14 @@ h2.hero-heading {
 /* blockquote */
 .testimonial blockquote {
     font-family: 'Playfair Display', serif;
-    font-size: 35px;
+    font-size: 25px;
     font-style: normal;
     line-height: 1.75;
 }
 
 @media only screen and (max-width: 995px) {
     .testimonial blockquote {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -6727,7 +6727,7 @@ button {
     }
 
     .more-button-bg-center.more-button-bg-center-dark.more-button-bg-center-dark-close {
-        border: 2px dashed #e5e5e5;
+        border: 2px dashed #000000;
     }
 
     .more-button-txt-center.more-button-txt-center-close span {
