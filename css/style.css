@@ -1261,7 +1261,7 @@ margin: 0;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 35px;
     text-align: center;
     text-transform: none;
     letter-spacing: -0.04em;
@@ -1288,7 +1288,7 @@ margin: 0;
 
 @media only screen and (max-width: 995px) {
     .hero-heading {
-        font-size: 45px;
+        font-size: 25px;
         margin: -6px auto 0 auto;
     }
 }
