@@ -1353,7 +1353,7 @@ h2.hero-heading {
 
 @media only screen and (max-width: 995px) {
     h2.hero-heading {
-        font-size: 45px;
+        font-size: 25px;
         margin: -6px auto;
     }
 }
@@ -3034,7 +3034,7 @@ video {
 }
 
 .center-block-contact-modal-padding-top {
-    padding: 100px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .center-block-contact-modal-padding-bottom {
