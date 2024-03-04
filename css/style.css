@@ -1261,7 +1261,7 @@ margin: 0;
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 55px;
+    font-size: 35px;
     text-align: center;
     text-transform: none;
     letter-spacing: -0.04em;
@@ -1288,7 +1288,7 @@ margin: 0;
 
 @media only screen and (max-width: 995px) {
     .hero-heading {
-        font-size: 45px;
+        font-size: 25px;
         margin: -6px auto 0 auto;
     }
 }
@@ -1353,7 +1353,7 @@ h2.hero-heading {
 
 @media only screen and (max-width: 995px) {
     h2.hero-heading {
-        font-size: 45px;
+        font-size: 25px;
         margin: -6px auto;
     }
 }
@@ -3034,7 +3034,7 @@ video {
 }
 
 .center-block-contact-modal-padding-top {
-    padding: 100px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 .center-block-contact-modal-padding-bottom {
@@ -3833,7 +3833,7 @@ p a:hover {
 }
 
     .more-button-bg-center.more-button-bg-center-dark {
-        background: none;
+        background: #fffbfbd6;
         border: 2px dashed #fff;
     }
 
@@ -3842,7 +3842,7 @@ p a:hover {
 }
 
 .more-button-bg-center.more-button-bg-center-dark.more-button-bg-center-dark-close {
-    background: none;
+    background: fffbfbd6;
     border: 2px dashed #fff;
 }
 
@@ -4753,14 +4753,14 @@ h2.hero-heading {
 /* blockquote */
 .testimonial blockquote {
     font-family: 'Playfair Display', serif;
-    font-size: 35px;
+    font-size: 25px;
     font-style: normal;
     line-height: 1.75;
 }
 
 @media only screen and (max-width: 995px) {
     .testimonial blockquote {
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -5903,7 +5903,7 @@ button {
 
     .halves-about .half-about-1,
     .halves-about .half-about-2 {
-        min-height: 650px;
+        min-height: 400px;
     }
 
     .about-bg-1,
@@ -6727,7 +6727,7 @@ button {
     }
 
     .more-button-bg-center.more-button-bg-center-dark.more-button-bg-center-dark-close {
-        border: 2px dashed #e5e5e5;
+        border: 2px dashed #000000;
     }
 
     .more-button-txt-center.more-button-txt-center-close span {
