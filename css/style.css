@@ -1688,7 +1688,7 @@ blockquote {
 @media only screen and (max-width: 995px) {
     .contact-info-description-img {
         font-size: 25px;
-        margin: -5px auto 0 auto;
+        margin: 30px auto 0 auto;
     }
 }
 
@@ -6731,7 +6731,7 @@ button {
     }
 
     .more-button-txt-center.more-button-txt-center-close span {
-        color: #e5e5e5;
+        color: #000000;
     }
 
     .contact-modal-closer {
