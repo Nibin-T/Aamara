@@ -32,8 +32,15 @@
 $(function() {
     "use strict";
 	
+    var hasRefreshed = false;
+
+    function hardRefresh() {
+        window.location.reload(true);
+    }
+
 	
     $(window).on("load", function() {
+
         // 1. preloader
         $("#preloader").fadeOut(600);
         $(".preloader-bg").delay(400).fadeOut(600);
@@ -45,8 +52,19 @@ $(function() {
             }).fadeIn(800);
         }, 0);
         $(".hero-bg").addClass("hero-bg-show");
+        
+        // var hasRefreshed = sessionStorage.getItem('hasRefreshed');
+        // if (!hasRefreshed) {
+        //     // Perform hard refresh
+        //     hardRefresh();
+        //     // Set flag in sessionStorage to indicate refresh has been performed
+        //     sessionStorage.setItem('hasRefreshed', true);
+        // }
+
     });
-	
+
+    
+
     // 3. page scroll
     $('a[href*="#"]:not([href="#"])').on("click", function() {
         console.log("click");
@@ -68,6 +86,10 @@ $(function() {
         }
     });
 	
+    $("#reservation-button").click(function() {
+        window.location.href = 'https://reservations.tangohq.com/reservation/new/92bcc4d6-d59b-427a-b6dd-47766d5168fb'
+      });
+
     // 4. navigation
     $("body").scrollspy({
         target: ".navbar",
@@ -75,6 +97,7 @@ $(function() {
     });
     $(".navbar-collapse ul li a").on("click", function() {
         $(".navbar-toggle:visible").click();
+
     });
 	
     $(window).on("scroll", function() {
@@ -615,6 +638,43 @@ $(function() {
         }
     });
 	
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get references to the navbar toggle button and reservation button
+        var navbarToggleButton = document.getElementById('navbar-toggle-button');
+        var reservationButton = document.querySelector('.reservation-button-nav-bar');
+    
+        // Add click event listener to the navbar toggle button
+        navbarToggleButton.addEventListener('click', function() {
+            // Check if the navbar is expanded or collapsed
+            var isExpanded = navbarToggleButton.getAttribute('aria-expanded') === 'true';
+    
+            // Toggle the class on the reservation button based on the navbar state
+            if (isExpanded) {
+                reservationButton.classList.remove('hidden-xs');
+            } else {
+                reservationButton.classList.add('visible-xs');
+            }
+        });
+    });
+    
+
+    $('.contact-submit-button').click(function(){
+        var $this = $(this);
+        var $form = $this.closest('form');
+        var filled = true;
+        
+        $form.find('.requiredField').each(function(){
+            if ($(this).val().trim() === '') {
+                filled = false;
+                return false; // exits the loop early if any field is empty
+            }
+        });
+        
+        if (filled) {
+            $this.text('Submitted!');
+        }
+    });
+    
 	// 20. reservation form
     $("form#form-2").on("submit", function() {
         $("form#form-2 .error-r").remove();
