@@ -36,81 +36,113 @@
     <!-- header start -->
     <div id="header" class="fadeIn-element">
         <!-- navigation start -->
-        <nav class="navbar navbar-fixed-top navbar-bg-switch">
+        <nav class="navbar navbar-fixed-top navbar-bg-switch" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
             <div class="container-fluid">
                 <div class="main-navigation">
-                    <div class="navbar-header">
+                    <div class="navbar-header" style="display: flex; align-items: center; width: 100%;">
                         <!-- navigation button start -->
-                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button">
-                            <span class="sr-only">
-                                Toggle navigation
-                            </span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button" style="margin-right: auto;padding-top: 4%;"> 
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
                         <!-- navigation button end -->
                         <!-- logo mobile start -->
-                        <div class="navbar-brand hidden-sm hidden-md hidden-lg logo active" href="#">
+                        <div class="navbar-brand hidden-sm hidden-md hidden-lg logo active" href="#" style="margin-left: auto; margin-right: auto;">
                             <!-- logo light start -->
-                            <img alt="Logo" class="logo-light" src="img/logo-light.png">
+                            <img alt="Logo" class="logo-light" src="img/logo-light.png" style="max-height: 50px;">
                             <!-- logo light end -->
                             <!-- logo dark start -->
-                            <img alt="Logo" class="logo-dark" src="img/logo-dark.png">
+                            <img alt="Logo" class="logo-dark" src="img/logo-dark.png" style="max-height: 50px;">
                             <!-- logo dark end -->
                         </div>
                         <!-- logo mobile end -->
                     </div>
                     <div class="reservation-button-container text-center visible-xs" style="z-index: 2;">
-                    <button id="reservation-button-hide-mobile"  type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal">Reservations</button>
-                </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse" style=" z-index: 2; height: 1px;">
+                        <button id="reservation-button-hide-mobile" type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal">Reservations</button>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse" style="z-index: 2; text-align: center;">
                         <!-- menu start -->
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="#home">Home</a>
+                        <ul class="nav navbar-nav" style="display: flex; justify-content: space-between; width: 100%; padding: 0; margin: 0;">
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#home" style="padding: 15px 10px;">Home</a>
                             </li>
-                            <li>
-                                <a href="#about">About</a>
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#about" style="padding: 15px 10px;">About</a>
                             </li>
-                            <li>
-                                <a href="#works">Menu</a>
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#works" style="padding: 15px 10px;">Menu</a>
                             </li>
-                            <li class="hidden-xs">
+                            <li class="hidden-xs" style="flex-grow: 0; display: flex; justify-content: center; align-items: center;">
                                 <!-- logo desktop start -->
-                                <a class="logo" href="#">
+                                <a class="logo" href="#" style="padding: 0; display: flex; align-items: center;">
                                     <!-- logo light start -->
-                                    <img alt="Logo" class="logo-light" src="img/logo-light.png">
+                                    <img alt="Logo" class="logo-light" src="img/logo-light.png" style="max-height: 50px;">
                                     <!-- logo light end -->
                                     <!-- logo dark start -->
-                                    <img alt="Logo" class="logo-dark" src="img/logo-dark.png">
+                                    <img alt="Logo" class="logo-dark" src="img/logo-dark.png" style="max-height: 50px;">
                                     <!-- logo dark end -->
                                 </a>
                                 <!-- logo desktop end -->
                             </li>
-                            <li class="hidden-xs">
-                                <a></a>
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#services" style="padding: 15px 10px;">Services</a>
                             </li>
-                            <li class="hidden-xs">
-                                <a></a>
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#blog" style="padding: 15px 10px;">Testimonials</a>
                             </li>
-                            <li class="hidden-xs">
-                                <a></a>
-                            </li>
-                            <li>
-                                <a href="#services">Services</a>
-                            </li>
-                            <li>
-                                <a href="#blog">Testimonials</a>
-                            </li>
-                            <li>
-                                <a href="#contact">Contact</a>
+                            <li style="flex-grow: 1; text-align: center;">
+                                <a href="#contact" style="padding: 15px 10px;">Contact</a>
                             </li>
                         </ul>
                         <!-- menu end -->
                     </div>
-                    <!-- Reservation button -->
-                    
                 </div>
             </div>
         </nav>
+        
+        
+        
+        <!-- Mobile view specific inline styles -->
+        <style>
+            @media (max-width: 768px) {
+                .navbar-header .navbar-toggle {
+                    margin-right: 0;
+                }
+                .navbar-header .navbar-brand {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .navbar-collapse.collapse {
+                    display: none;
+                }
+                .navbar-collapse.collapse.in {
+                    display: flex !important;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .navbar-collapse ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+                .navbar-collapse ul li {
+                    width: 100%;
+                    margin: 5px 0;
+                }
+                .navbar-brand img {
+                    max-height: 40px;
+                }
+                .navbar-fixed-top.shrink .navbar-brand img {
+                    max-height: 30px;
+                }
+            }
+        </style>
+        
         
         <!-- navigation end -->
     </div>
