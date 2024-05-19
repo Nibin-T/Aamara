@@ -12,7 +12,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <!-- style start -->
     <link href="css/plugins.css" media="all" rel="stylesheet" type="text/css">
-    <link href="css/style2.css" media="all" rel="stylesheet" type="text/css">
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css">
     <!-- style end -->
     <!-- google fonts start -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900%7CPlayfair+Display:500,600,700,800,900" rel="stylesheet" type="text/css">
@@ -36,119 +36,88 @@
     <!-- header start -->
     <div id="header" class="fadeIn-element">
         <!-- navigation start -->
-        <nav class="navbar navbar-fixed-top navbar-bg-switch" style="position: fixed; top: 0; width: 100%; z-index: 1000;">
+        <nav class="navbar navbar-fixed-top navbar-bg-switch">
             <div class="container-fluid">
                 <div class="main-navigation">
-                    <div class="navbar-header" style="display: flex; align-items: center; width: 100%;">
+                    <div class="navbar-header">
                         <!-- navigation button start -->
-                        
-                            
-                        
-                        
+                        <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button">
+                            <span class="sr-only">
+                                Toggle navigation
+                            </span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+                        </button>
+                        <!-- navigation button end -->
                         <!-- logo mobile start -->
-                        <div class="navbar-brand hidden-sm hidden-md hidden-lg logo active" href="#" style="box-sizing: border-box;margin-left: auto; margin-right: auto;padding-right: 800px;padding-top: 30px;">
+                        <div class="navbar-brand hidden-sm hidden-md hidden-lg logo active" href="#">
                             <!-- logo light start -->
-                            <img alt="Logo" class="logo-light" src="img/logo-light.png" style="max-height: 50px;">
+                            <img alt="Logo" class="logo-light" src="img/logo-light.png" style="z-index: 3;">
                             <!-- logo light end -->
                             <!-- logo dark start -->
-                            <img alt="Logo" class="logo-dark" src="img/logo-dark.png" style="max-height: 50px;">
+                            <img alt="Logo" class="logo-dark" src="img/logo-dark.png" style="z-index: 3;">
                             <!-- logo dark end -->
                         </div>
                         <!-- logo mobile end -->
                     </div>
-                    <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button" style="box-sizing: border-box;margin-right: 0px;margin-top: -70px;margin-bottom: 15px;">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <div class="reservation-button-container text-center visible-xs" style="z-index: 2;padding-left: 40px;">
-                        <button id="reservation-button-hide-mobile" type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal" style="margin-right: 18px;">Reservations</button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="navbar-collapse" style="z-index: 2; text-align: center;margin-left: 50px;">
+                    <div class="reservation-button-container text-center visible-xs" style="z-index: 2;">
+                    <button id="reservation-button-hide-mobile"  type="submit" class="logo-dark reservation-button-nav-bar" data-toggle="modal" data-target="#reservation-modal">Reservations</button>
+                </div>
+                    <div class="collapse navbar-collapse" id="navbar-collapse" style="z-index: 2;">
+
                         <!-- menu start -->
-                        <ul class="nav navbar-nav" style="display: flex; justify-content: space-between; width: 100%; padding-left:20px; margin: 0;">
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#home" style="padding:0">Home</a>
+                        <ul class="nav navbar-nav">
+                            <li class="hidden-xs">
+                                <a></a>
                             </li>
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#about" style="padding:0">About</a>
+                            <li class="hidden-xs">
+                                <a></a>
                             </li>
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#works" style="padding: 0">Menu</a>
+                            <li>
+                                <a href="#home">Home</a>
                             </li>
-                            <li class="hidden-xs" style="flex-grow: 0; display: flex; justify-content: center; align-items: center;">
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#works">Menu</a>
+                            </li>
+                            <li class="hidden-xs">
                                 <!-- logo desktop start -->
-                                <a class="logo" href="#" style="padding: 0; display: flex; align-items: center;">
+                                <a class="logo" href="#">
                                     <!-- logo light start -->
-                                    <img alt="Logo" class="logo-light" src="img/logo-light.png" style="max-height: 50px;">
+                                    <img alt="Logo" class="logo-light" src="img/logo-light.png">
                                     <!-- logo light end -->
                                     <!-- logo dark start -->
-                                    <img alt="Logo" class="logo-dark" src="img/logo-dark.png" style="max-height: 50px;">
+                                    <img alt="Logo" class="logo-dark" src="img/logo-dark.png">
                                     <!-- logo dark end -->
                                 </a>
                                 <!-- logo desktop end -->
                             </li>
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#services" style="padding: 0;">Services</a>
+                            <li class="hidden-xs">
+                                <a></a>
                             </li>
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#blog" style="padding: 0;">Testimonials</a>
+                            <li class="hidden-xs">
+                                <a></a>
                             </li>
-                            <li style="flex-grow: 1; text-align: center;">
-                                <a href="#contact" style="padding: 0;">Contact</a>
+                            <li class="hidden-xs">
+                                <a></a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#blog">Testimonials</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                         <!-- menu end -->
                     </div>
+                    <!-- Reservation button -->
+                    
                 </div>
             </div>
         </nav>
-        <!-- navigation button end -->
-        
-        
-        
-        
-        <!-- Mobile view specific inline styles -->
-        <style>
-            @media (max-width: 768px) {
-                .navbar-header .navbar-toggle {
-                    margin-right: 0;
-                }
-                .navbar-header .navbar-brand {
-                    margin-left: 0;
-                    margin-right: 0;
-                }
-                .navbar-collapse.collapse {
-                    display: none;
-                }
-                .navbar-collapse.collapse.in {
-                    display: flex !important;
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .navbar-collapse ul {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
-                    margin: 0;
-                    padding: 0;
-                }
-                .navbar-collapse ul li {
-                    width: 100%;
-                    margin: 5px 0;
-                }
-                .navbar-brand img {
-                    max-height: 40px;
-                }
-                .navbar-fixed-top.shrink .navbar-brand img {
-                    max-height: 30px;
-                }
-                
-            }
-        </style>
-        
         
         <!-- navigation end -->
     </div>
@@ -745,7 +714,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/chennai.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
@@ -805,7 +774,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/goa.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
@@ -834,7 +803,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/jaipur.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
@@ -865,7 +834,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/kolkata.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
@@ -895,7 +864,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/hyderabad.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
@@ -926,7 +895,7 @@
                                     <div class="menu-img">
                                         <div class="menu-img-inner">
                                             <a class="popup-photo" href="img/menu/222.jpg" title="">
-                                            <img src="img/menu/bengaluru.jpg" alt="Img"/>
+                                            <img src="img/menu/222.jpg" alt="Img"/>
                                             </a>
                                         </div>
                                     </div>
