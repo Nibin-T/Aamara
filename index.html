@@ -420,7 +420,7 @@
                                 
                                 <!-- section txt end -->
                                 <!-- divider start -->
-                                <div class="divider-l"></div>
+                                <!-- <div class="divider-l"></div> -->
                                 <!-- divider end -->
                                 
                                 <!-- button start -->
@@ -1037,7 +1037,7 @@
         </div>
         <!-- container end -->
         <!-- container start -->
-        <div class="container-fluid nopadding">
+        <div class="container-fluid nopadding" >
             <!-- carousel start -->
             <div class="carousel-item-img-wrapper carousel-item-img-wrapper-all">
                 <div class="extra-margin-owl">
@@ -1103,7 +1103,7 @@
             <div class="divider-l"></div>
             <!-- divider end -->
             <!-- owl nav start -->
-            <div class="owl-nav owl-nav-custom-inside"></div>
+            <div class="owl-nav owl-nav-custom-inside" ></div>
             <!-- owl nav end -->
             <!-- divider start -->
             <div class="divider-xl"></div>
@@ -1169,7 +1169,7 @@
             </div>
             <!-- container end -->
             <!-- container start -->
-            <div class="container-fluid nopadding" >
+            <div class="container-fluid nopadding" id="adjust-height" style="position: relative;">
                 <!-- carousel start -->
                 <div class="owl-carousel owl-carousel-news">
                     <!-- halve start -->
@@ -1575,10 +1575,10 @@
                 </div>
                 <!-- carousel end -->
                 <!-- divider start -->
-                <div class="divider-l"></div>
+                <!-- <div class="divider-l"></div> -->
                 <!-- divider end -->
                 <!-- owl nav start -->
-                <div class="owl-nav owl-nav-custom-news"></div>
+                <div class="owl-nav owl-nav-custom-news" style="top: -90px;"></div>
                 <!-- owl nav end -->
                 <!-- row start -->
                 <div class="row">
@@ -1606,6 +1606,20 @@
                 </div>
                 <!-- row end -->
             </div>
+            <style>
+                @media (max-width: 767px) {
+                    #adjust-height {
+                        height: 150%;
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    #adjust-height {
+                        height: 230%;
+                    }
+                }
+            </style>
+
             <!-- container end -->
         </div>
         <!-- blog end -->
